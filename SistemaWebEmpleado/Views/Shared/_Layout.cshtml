@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/main.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header>
+        <h1>SISTEMA Empleado</h1>
+    </header>
+
+    <aside>
+        @if (IsSectionDefined("SideBar"))
+        {
+            @RenderSection("SideBar")
+        }
+        else
+        {
+                    <h2>Administración de empleados</h2>
+        }
+    </aside>
+
+    <nav>
+        @Html.ActionLink("Home", "Index", "Home")
+        @Html.ActionLink("Empleado", "Index", "Empleado")
+
+    </nav>
+
+    <main>
+    <div>
+        @RenderBody()
+    </div>
+    </main>
+
+    <footer>
+        <h3>Info@Empleado.com</h3>
+    </footer>
+</body>
+</html>

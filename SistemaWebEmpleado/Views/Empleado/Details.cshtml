@@ -1,0 +1,29 @@
+﻿@model SistemaWebEmpleado.Models.Empleado
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+<h2>Ver Detalle</h2>
+@Html.ActionLink("Volver a index","Index","Empleado")
+
+<p>
+    @Html.DisplayNameFor(model=>model.Nombre)
+    @Html.DisplayFor(model=>model.Nombre)
+</p>
+<p>
+    @Html.DisplayNameFor(model=>model.Apellido)
+    @Html.DisplayFor(model=>model.Apellido)
+</p>
+<p>
+    @Html.DisplayNameFor(model=>model.Titulo)
+    @Html.DisplayFor(model=>model.Titulo)
+</p>
+
+<p>
+    @Html.DisplayNameFor(model=>model.Legajo)
+    @Html.DisplayFor(model=>model.Legajo)
+</p>
+
+

@@ -1,0 +1,65 @@
+﻿body {
+    box-sizing: border-box;
+    background-color: darkslategray;
+    color: floralwhite;
+    margin: 0;
+}
+
+header {
+    font-size: 20px;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+a {
+    color: floralwhite;
+    text-decoration: none;
+}
+
+aside {
+    background-color: aliceblue;
+    color: black;
+    display: flex;
+    font-weight: bold;
+}
+
+nav {
+    background-color: cadetblue;
+    padding: 10px;
+    text-align: right;
+}
+
+nav a {
+    padding: 3em;
+    font-size: 18px;
+}
+
+main {
+    background-color: ghostwhite;
+    min-height: 25em;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+main a {
+    margin: 3em;
+    color: darkseagreen;
+    font-size: 25px;
+    font-weight: bold;
+ 
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}

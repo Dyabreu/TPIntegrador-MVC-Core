@@ -1,0 +1,32 @@
+﻿@model SistemaWebEmpleado.Models.Empleado;
+
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+    <h2>Empleado: @Model.Nombre @Model.Apellido</h2>
+    <p>Desea eliminar este empleado?</p>
+
+@using (Html.BeginForm("Delete", "Empleado", FormMethod.Post))
+{
+                <div>
+                    <span>@Html.DisplayNameFor(model=>model.Apellido)</span>
+                    <span>@Html.DisplayFor(model=>model.Apellido)</span>
+                </div>
+                 <div>
+                    <span>@Html.DisplayNameFor(model=>model.Titulo)</span>
+                    <span>@Html.DisplayFor(model=>model.Titulo)</span>
+                </div>
+                <div>
+                    <span>@Html.DisplayNameFor(model=>model.Legajo)</span>
+                    <span>@Html.DisplayFor(model=>model.Legajo)</span>
+                </div>
+                <div>
+                    <span>@Html.DisplayNameFor(model=>model.FechaNacimiento)</span>
+                    <span>@Html.DisplayFor(model=>model.FechaNacimiento)</span>
+                </div>
+                <input type="submit" action="Delete"  />
+
+    @Html.ActionLink("Volver", "Index","Empleado")
+}
